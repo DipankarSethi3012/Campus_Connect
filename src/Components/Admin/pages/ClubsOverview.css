@@ -1,0 +1,239 @@
+/* General Container */
+.clubs-overview-container {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  margin-top: 60px; /* Matches navbar height */
+  margin-left: 235px; /* Matches sidebar width */
+  transition: margin-left 0.3s ease-in-out; /* Smooth transition for responsive sidebar */
+}
+
+/* Heading Styles */
+h1 {
+  text-align: center;
+  color: #343a40;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Section Headings */
+.section h2 {
+  color: #495057;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 5px;
+}
+
+/* Action Buttons */
+.actions {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+  gap: 10px;
+}
+
+.add-club-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #6eb0ec;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.add-club-btn:hover {
+  background-color: #4a90e2;
+  transform: scale(1.05);
+}
+
+/* Create Club Form */
+.create-club-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.create-club-form input,
+.create-club-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.create-club-form button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.create-club-form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Table Styles */
+.clubs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto; /* Ensures table scrolls on smaller screens */
+}
+
+.clubs-table th,
+.clubs-table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.clubs-table th {
+  background-color: #6eb0ec;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.clubs-table td {
+  background-color: #fff;
+}
+
+.clubs-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Action Buttons in Table */
+.action-btn {
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+}
+
+.action-btn.update {
+  background-color: #ff9800;
+  color: white;
+}
+
+.action-btn.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.action-btn.assign {
+  background-color: #4caf50;
+  color: white;
+}
+
+.action-btn.remove {
+  background-color: #2196f3;
+  color: white;
+}
+
+.action-btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .clubs-overview-container {
+    margin-left: 0; /* Adjusts layout for smaller screens */
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .create-club-form input,
+  .create-club-form textarea {
+    font-size: 0.95rem;
+    padding: 8px;
+  }
+
+  .create-club-form button {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  .add-club-btn {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+
+  .clubs-table th,
+  .clubs-table td {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .actions {
+    flex-direction: column;
+    gap: 10px; /* Stack buttons on smaller screens */
+  }
+
+  .clubs-table th,
+  .clubs-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .add-club-btn {
+    font-size: 0.9rem;
+  }
+
+  .create-club-form input,
+  .create-club-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .create-club-form button {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .create-club-form input,
+  .create-club-form textarea {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
+
+  .create-club-form button,
+  .add-club-btn {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+
+  .clubs-table th,
+  .clubs-table td {
+    font-size: 0.85rem;
+    padding: 6px;
+  }
+}

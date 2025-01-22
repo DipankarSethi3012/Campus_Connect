@@ -1,0 +1,112 @@
+.front-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    justify-content: space-between;
+    /* Space out the cards */
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    /* Default flex for all cards */
+}
+
+.card h2{
+    font-size: 1.5vw;
+}
+
+.calendar-section {
+    flex: 2 1 56%;
+    /* height: 600px; */
+    /* Calendar takes 2/3 of the width */
+    min-width: 400px;
+    /* Prevent shrinking too small */
+}
+
+.count-notif{
+    flex: 2 1 30%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.count-notif>div:nth-child(1) {
+    /* First item */
+    flex: 1;
+    /* This will make the first item take less space */
+}
+
+.count-notif>div:nth-child(2) {
+    /* Second item */
+    flex: 3;
+    /* This will make the second item take more space */
+}
+
+
+.calendar{
+    width: 300px;
+    height: 450px;
+}
+
+.slider-section {
+    flex: 1 1 20%;
+    /* Sliders take up 45% of the width */
+}
+
+.count-notif .registration-counter{
+    height: 150px;
+    width: 100%;
+}
+
+.count-notif .notifications {
+    width: 100%;  
+}
+
+.count {
+    font-size: 36px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.calendar-note {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.calendar {
+    width: 100%;
+    /* Ensures the calendar stretches to full width of its container */
+    margin-top: 10px;
+}
+
+.notifications ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.notifications li {
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.event-date {
+    background-color: #007bff68 !important;
+    height: 60px;
+    width: 60px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+

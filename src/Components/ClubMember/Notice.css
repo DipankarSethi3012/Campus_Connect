@@ -1,0 +1,150 @@
+.notice-management-container {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    margin-top: 60px;
+    margin-left: 235px; /* Matches sidebar width */
+  }
+  
+  /* Heading Styles */
+  h1 {
+    text-align: center;
+    color: #343a40; /* Darker text for contrast */
+    font-size: 2.5rem; /* Matches other pages */
+    margin-bottom: 30px;
+  }
+  
+  /* Action Buttons */
+  .actions {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .add-notice-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #6eb0ec;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .add-notice-btn:hover {
+    background-color: #4a90e2;
+    transform: scale(1.05); /* Lift effect */
+  }
+  
+  /* Create Notice Form */
+  .create-notice-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .create-notice-form input,
+  .create-notice-form textarea {
+    padding: 12px; /* Matches consistent padding */
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .create-notice-form button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .create-notice-form button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Lift effect */
+  }
+  
+  /* Table Styles */
+  .notices-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .notices-table th,
+  .notices-table td {
+    padding: 15px; /* Matches consistent table padding */
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 1rem; /* Matches other pages */
+  }
+  
+  .notices-table th {
+    background-color: #6eb0ec;
+    color: white;
+    font-size: 1.2rem; /* Improved readability */
+  }
+  
+  .notices-table td {
+    background-color: #fff;
+  }
+  
+  .notices-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Action Buttons in Table */
+  .action-btn {
+    padding: 10px 15px; /* Consistent padding */
+    font-size: 0.95rem; /* Matches other pages */
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .action-btn.update {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .action-btn.delete {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .action-btn:hover {
+    transform: scale(1.05); /* Lift effect */
+    opacity: 0.9;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .notices-table th,
+    .notices-table td {
+      padding: 10px;
+      font-size: 0.9rem; /* Adjusted for smaller screens */
+    }
+  
+    .add-notice-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    h1 {
+      font-size: 2rem; /* Adjusted for smaller screens */
+    }
+  
+    .create-notice-form input,
+    .create-notice-form textarea {
+      font-size: 0.9rem;
+    }
+  }

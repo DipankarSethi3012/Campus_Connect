@@ -1,0 +1,70 @@
+/* Notice board container */
+.notice-box-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+/* Notice card style */
+.notice-box {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.notice-box:hover {
+  transform: scale(1.05);
+}
+
+/* Notice title and description */
+.notice-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.notice-box p {
+  font-size: 1rem;
+  color: gray;
+}
+
+/* Detailed notice view */
+.notice-details {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Title and content of the notice details */
+.notice-details h2 {
+  font-size: 1.5rem;
+}
+
+.notice-details p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Button for any action in the details view */
+.notice-details button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notice-details button:hover {
+  background-color: #0056b3;
+}
+
+.random{
+  color: black;
+}

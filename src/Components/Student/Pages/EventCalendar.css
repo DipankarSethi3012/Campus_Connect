@@ -1,0 +1,17 @@
+/* styles.css */
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader {
+    height: 24px; /* Or desired height */
+    width: 24px;  /* Or desired width */
+    animation: spin 1s linear infinite;
+    color: #1d4ed8; /* Example: Tailwind's blue-500 */
+  }
+  
