@@ -1,0 +1,107 @@
+
+.user-profile-container {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    margin-top: 60px;
+    margin-left: 250px; 
+  }
+  
+ 
+  h1 {
+    text-align: center;
+    color: #343a40;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+  
+ 
+  .profile-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    border: 1px solid #dee2e6;
+  }
+  
+  .profile-card h2 {
+    font-size: 1.8rem;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-info p {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .profile-info strong {
+    color: #343a40;
+  }
+  
+ 
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .edit-profile-btn,
+  .update-password-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .edit-profile-btn {
+    background-color: #6eb0ec; /* Blue */
+  }
+  
+  .edit-profile-btn:hover {
+    background-color: #4a90e2;
+    transform: scale(1.05);
+  }
+  
+  .update-password-btn {
+    background-color: #ff9800; 
+  }
+  
+  .update-password-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .profile-card {
+      padding: 15px;
+    }
+  
+    .profile-info p {
+      font-size: 1rem;
+    }
+  
+    .edit-profile-btn,
+    .update-password-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  }
+    

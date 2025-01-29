@@ -1,0 +1,33 @@
+/* Header Section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: #6eb0ec;
+    padding: 5px 15px;
+    color: white;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width header */
+    height: 80px; /* Set a fixed height for the header */
+    z-index: 5; /* Ensure it appears above other content */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Optional: Adds shadow for better visibility */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 50px; 
+    color: white; 
+    margin-right: 10px; 
+}
+
+.website-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
